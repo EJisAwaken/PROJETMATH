@@ -1,0 +1,132 @@
+/*css de l'acive'*/
+.lienc.active{
+    background-color: rebeccapurple;
+}
+
+#fleche{
+    width: 50px;
+}
+#flechetot{
+    text-align: left;
+    margin: 0 0 0 20px ;
+    display: none;
+
+}
+.nosServices a{
+    color: whitesmoke;
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: gray;
+    align-content: center;
+    text-align: center}
+
+.contenu{
+    font-size: 40px;
+}
+
+.type a {
+    color: white;
+    margin: 0 10px 0 0 ;
+}
+.type{
+    border:1px solid white;
+    padding: 2%;
+    width: 100%;
+
+}
+
+#titre, main{
+    text-align: center;
+}
+
+#a, #b, #c{
+    margin: 5% 0 5% 0 ;
+    width: 45px;
+    height: 40px;
+    color: black;
+}
+
+.valeur{
+    font-size: 20px;
+}
+
+#btn1{
+    padding: 2%;
+    background-color: mediumslateblue;
+    font-size: 20px;
+}
+.accolade img{
+    height: 180px;
+
+}
+
+.fonction{
+    margin: 5% 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    font-size: 50px ;
+}
+
+#solution{
+    text-align: center;
+    margin: 1% 0 0 0 ;
+    font-size: 50px;
+
+}
+
+#x1, #x2, #x3{
+    color: blue;
+}
+
+/*effet fadin*/
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-100%);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.case{
+    width: 50px;
+    height: 40px;
+    font-size: 30px;
+    background: rgba(0,0,0,0.1);
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .gridGauche{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #flechetot{
+        display: block;
+    }
+}

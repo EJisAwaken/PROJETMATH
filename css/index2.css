@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "font1";
+    src: url("../font/font1.ttf");
+}@font-face {
+    font-family: "font2";
+    src: url("../font/font2.ttf");
+}
+
+
+/*animation fade in*/
+
+.fade{
+    animation: bascule 1s ease-out forwards;
+}
+
+@keyframes bascule {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 900px;
+    gap: 2px;
+}
+
+#secondD, #cramer, #panneau{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#secondD{
+    background-color: darkblue;
+}
+
+#cramer{
+    background-color: darkblue;
+}
+
+#panneau{
+    background-color: darkblue;
+}
+
+
+
+.option img{
+    width: 100%;
+    border-radius:50%;
+}
+
+.option h1 a{
+    font-family: font1, serif;
+    color: white;
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 900px) {
+    .grid{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/cramer.css">
+</head>
+<body class="fade">
+<section class="grid">
+    <div class="gridGauche">
+
+        <div class="lesFonctionnalites">
+            <div class="nosServices"><a href="../index2.html"> Retourner a la page d'accueil</a></div>
+            <br><br>
+
+            <div id="secondDegree" class="menu">
+                <img src="../Illustrations/Accueil/secondd.jfif"  alt="logoSECONDdEGREE">
+                <h1><a href="seconddegree.html" >Second Degrée</a></h1><br><br>
+            </div>
+                <div id="cramer" class="menu lienc active">
+                    <img src="../Illustrations/Accueil/cramer.jfif"  alt="logoCramer">
+                    <h1><a href="cramer.html">Resolution à trois inconnues</a></h1>
+                </div>
+                <br><br>
+                <div id="panneau" class="menu">
+                    <img src="../Illustrations/Accueil/panneau.jpg"  alt="logoCramer">
+                    <h1><a href="panneau.html">Panneau publicitaire</a></h1>
+                </div>
+            </div>
+
+    </div>
+
+    <!--    Debut de l'element droite-->
+
+    <div class="gridDroite">
+
+        <div id="titre">
+            <p id="flechetot"><a href="../index2.html"> <img src="../Illustrations/Accueil/Retout.jfif" id="fleche"> <br>Retour au menu</a></p>
+
+            <h1>Resolution d'un systeme d'equations</h1>
+            <h2>Cette equation est de la forme : <br></h2>
+            <div class="fonction">
+                <div class="accolade">
+                    <img src="../Illustrations/Cramer/acoola-removebg-preview.png" alt="acollade">
+                </div>
+                <div class="contenu">
+                    <p><input type="number" id="a11" class="case">x<sub>1</sub> + <input type="number" id="a12" class="case">x<sub>2</sub> +<input type="number" id="a13" class="case">x<sub>3</sub> = <input type="number" id="b1" class="case">
+                    <p><input type="number" id="a21" class="case">x<sub>1</sub> + <input type="number" id="a22" class="case">x<sub>2</sub> +<input type="number" id="a23" class="case">x<sub>3</sub> = <input type="number" id="b2" class="case">
+                    <p><input type="number" id="a31" class="case">x<sub>1</sub> + <input type="number" id="a32" class="case">x<sub>2</sub> +<input type="number" id="a33" class="case">x<sub>3</sub> = <input type="number" id="b3" class="case">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="solution">
+            <button id="btn1">RESULTAT</button>
+        </div>
+
+        <div class="fonction">
+            <div class="accolade">
+                <img src="../Illustrations/Cramer/acoola-removebg-preview.png" alt="acollade">
+            </div>
+            <div id="resultat">
+                <p>x <sub>1</sub> = <span id="x1"></span></p>
+                <p>x <sub>2</sub> = <span id="x2"></span></p>
+                <p>x <sub>3</sub> = <span id="x3"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+<script src="../js/cramer.js"></script>
+</body>
+</html>

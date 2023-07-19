@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Berlin Sans FB Demi", "Arial Nova Cond Light", "fantasy";
+}
+
+/*les fonts face*/
+
+@font-face {
+    font-family: "font1";
+    src: url("font/font1.ttf");
+}@font-face {
+    font-family: "font2";
+    src: url("font/font2.ttf");
+}
+
+
+/*animation fade in*/
+
+.fade{
+    animation: bascule 1s ease-out forwards;
+}
+
+@keyframes bascule {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+}
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+/*CSS DE LA FORME DE LA PAGE*/
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px auto ;
+    gap: 2px;
+
+}
+
+/*CSS DE LA PARTIE GAUCHE*/
+
+.gridGauche{
+    height: 100vh;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.nosServices{
+    font-size: 40px;
+    text-decoration: underline double white;
+    color: white;
+    font-family: font2, serif;
+
+}
+
+.menu{
+    padding: 2% 0;
+}
+
+.menu h1 a{
+    color: white;
+    font-family: font1, serif;
+    font-size: 35px;
+
+}
+
+.menu img{
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+
+
+}
+
