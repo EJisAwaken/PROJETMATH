@@ -33,8 +33,9 @@ btn.addEventListener("click", () => {
             let solution1 = ((-b.value) - del) / (2) * (a.value);
             let solution2 = ((-b.value) - del) / (2) * (a.value);
             console.log("X1 = " + solution1 + " " + "et" + " " + "X2 = " + solution2);
+            document.querySelector("#vide").innerText = del;
+            document.querySelector(".solution").style.display = "block";
             deltaaa.innerText='Cette equation a une solution unique' + "." + " Il a comme delta : " + del;
-
 
 
         } else if (conclusion < 0) {
@@ -50,6 +51,9 @@ btn.addEventListener("click", () => {
             deltaaa.innerText='Cette equation a deux solutions distinctes' + ". " + " Elle a comme delta : " + del;
             x1.innerText = solution1.toFixed(2);
             x2.innerText = solution2.toFixed(2);
+                        document.querySelector(".solution").style.display = "block";
+
+
         }
         else {
             alert("Entrer une valeur");

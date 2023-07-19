@@ -22,11 +22,13 @@ body{
     text-align: center;
 }
 
-
+.solution{
+    display: none;
+}
 #titre, #formule, form, .solution{
     font-size: 4.5vw;
     text-align: center;
-    margin: 4% 0;
+    margin: 0 0;
 }
 
 #btn1{
