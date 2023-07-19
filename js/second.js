@@ -44,7 +44,7 @@ btn.addEventListener("click", () => {
         } else if (conclusion > 0) {
             console.log("Delta a deux solutions distinctes")
             let del = Math.sqrt(conclusion);
-            console.log("Il a comme delta : " + del)
+            console.log("Il a comme delta : " + del);
             let solution1 = ((-b.value) + del) / (2) * (a.value);
             let solution2 = ((-b.value) - del) / (2) * (a.value);
             console.log("x1 = " + solution1 + " " + "et" + " " + "x2 = " + solution2);
